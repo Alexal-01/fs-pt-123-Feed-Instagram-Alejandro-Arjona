@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
+    <div class="container-fluid">
+      <a class="navbar-brand me-2" href="#"><i class="bi bi-instagram"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active ps-0" aria-current="page" href="#"><strong>Instagram</strong></a>
+          </li>
+        </ul>
+        <!-- MODAL -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create a New Post
+        </button>
+        <!--Modal Header-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a New Post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <!--Modal Body-->
+              <div class="modal-body">
+                <p>Caption</p>
+                <div class="form-floating">
+                  <textarea class="form-control mb-2" placeholder="Leave a comment here"
+                    id="floatingTextarea"></textarea>
+                  <label for="floatingTextarea">Add the caption of your post here</label>
+                  <a class="btn btn-Light border border-secondary-subtle" href="#" role="button"><i
+                      class="bi bi-camera-fill"></i></a>
+                  <a class="btn btn-Light border border-secondary-subtle" href="#" role="button"><i
+                      class="bi bi-geo-alt-fill"></i></a>
+                </div>
+              </div>
+              <!--Modal Footer-->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Dropdowns-->
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-gear-fill"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">rivacy and Data</a></li>
+            <hr>
+            <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+          </ul>
+        </div>
+        <!--------final dropdowns-------->
+      </div>
+    </div>
+  </nav>
+  <!------------final Navbar--------------->
+
+  <!--Iconos pestañas grids-->
+  <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+        role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="bi bi-grid-3x3-gap"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+        role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="bi bi-square-fill"></i></button>
+    </li>
+  </ul>
+
+  <!--Contenido Feed Grid 1x1-->
+  <div class="container tab-content">
+    <div class="row tab-pane fade justify-content-center ms-6" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+      <div class="card m-2 p-0 col-10">
+        <div class="d-flex justify-content-between mx-1">
+          <p><strong>Brochas de colores</strong></p>
+          <p>11/5</p>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top" alt="Brochas de colores">
+        <div class="card-body">
+          <h6 class="card-title"><strong>240 likes</strong></h6>
+          <p class="card-text">Brochas danzan sobre el lienzo,
+            como sueños que se escapan al viento.
+            Rojo pasión, azul profundo,
+            verde esperanza, dorado mundo.
+            Cada trazo cuenta una historia,
+            de amor, de lucha, de memoria.
+            Pinceladas que el alma revelan,
+            y en cada color, las sombras consuelan.
+          </p>
+        </div>
+      </div>
+
+      <div class="card m-2 p-0 col-10">
+        <div class="d-flex justify-content-between mx-1">
+          <p><strong>Flor de colores</strong></p>
+          <p>6/4</p>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1464820453369-31d2c0b651af?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top border border-dark-subtle" alt="Biblioteca">
+        <div class="card-body">
+          <h6 class="card-title"><strong>131 likes</strong></h6>
+          <p class="card-text">En el jardín donde el sol se posa,
+            nace una flor, radiante y hermosa.
+            Sus pétalos bailan en mil matices,
+            como sueños pintados en días felices.
+            No es solo flor, es canto y pintura,
+            un poema vivo, pura ternura.
+            Y al verla brillar bajo el sol que la adora,
+            la vida parece más bella ahora.
+          </p>
+        </div>
+      </div>
+
+      <div class="card m-2 p-0 col-10">
+        <div class="d-flex justify-content-between mx-1">
+          <p><strong>Hombre apoyado</strong></p>
+          <p>31/3</p>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1521112376370-0a3b01544ab1?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top" alt="Hombre Apoyado">
+        <div class="card-body">
+          <h6 class="card-title"><strong>487 likes</strong></h6>
+          <p class="card-text">Apoyado en ladrillos del tiempo, el hombre contempla sin prisa el viento. Gorra de tela,
+            mirada gastada, la vida escrita en su piel arrugada. La pared, testigo de historias pasadas, susurra
+            memorias ya olvidadas. Él no habla, pero todo lo dice: anhela una vida llena de finales felices.
+          </p>
+        </div>
+      </div>
+
+      <div class="card m-2 p-0 col-10">
+        <div class="d-flex justify-content-between mx-1">
+          <p><strong>Viaje en tren</strong></p>
+          <p>14/2</p>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1696994719492-dc6ba2c3c46d?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top border border-dark-subtle" alt="foto Trenes">
+        <div class="card-body">
+          <h6 class="card-title"><strong>346 likes</strong></h6>
+          <p class="card-text">El tren avanza, pero mi ser se queda,
+            mirada perdida, alma que espera.
+            Sombras de hierro cruzan su piel,
+            y el tiempo se esconde tras el andén.
+            Un instante quieto, sin despedida,
+            como si el viaje fuera para toda la vida.
+          </p>
+        </div>
+      </div>
+
+      <div class="card m-2 p-0 col-10">
+        <div class="d-flex justify-content-between mx-1">
+          <p><strong>Hoguera</strong></p>
+          <p>25/1</p>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1684403964197-999fc639247f?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top border border-dark-subtle" alt="Biblioteca">
+        <div class="card-body">
+          <h6 class="card-title"><strong>176 likes</strong></h6>
+          <p class="card-text">Crujen los troncos, canta el calor,
+            la noche se enciende con su fulgor.
+            Llama que baila, chispa que vuela,
+            el alma se abriga bajo su estela.
+            Silencio ardiente, tiempo sin prisa,
+            la hoguera susurra con suave brisa.
+          </p>
+        </div>
+      </div>
+
+      <div class="card m-2 p-0 col-10">
+        <div class="d-flex justify-content-between mx-1">
+          <p><strong>4Geeks</strong></p>
+          <p>7/12</p>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1593640475673-e2454e28d27c?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top border border-dark-subtle" alt="Persona Programando">
+        <div class="card-body">
+          <h6 class="card-title"><strong>131 likes</strong></h6>
+          <p class="card-text">En 4Geeks se enciende el saber,
+            con cada línea, aprendes a crecer.
+            No es solo código, es transformación,
+            de sueños dispersos a una profesión.
+            Aquí se forjan mentes brillantes,
+            con lógica, esfuerzo y pasos constantes.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--Contenido Feed grid 3x3-->
+  <div class="container tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+    tabindex="0">
+    <div class="row justify-content-center">
+
+      <div class="card m-2 p-0 col-lg-3 col-md-4 col-sm-12">
+        <div class="d-flex justify-content-between mx-1">
+          <p><strong>Brochas de colores</strong></p>
+          <p>11/5</p>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top" alt="Brochas de colores">
+        <div class="card-body">
+          <h6 class="card-title"><strong>240 likes</strong></h6>
+          <p class="card-text">Brochas danzan sobre el lienzo,
+            como sueños que se escapan al viento.
+            Rojo pasión, azul profundo,
+            verde esperanza, dorado mundo.
+            Cada trazo cuenta una historia,
+            de amor, de lucha, de memoria.
+            Pinceladas que el alma revelan,
+            y en cada color, las sombras consuelan.
+          </p>
+        </div>
+      </div>
+
+      <div class="card m-2 p-0 col-lg-3 col-md-4 col-sm-12">
+        <div class="d-flex justify-content-between mx-1">
+          <p><strong>Flor de colores</strong></p>
+          <p>6/4</p>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1464820453369-31d2c0b651af?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top border border-dark-subtle" alt="Biblioteca">
+        <div class="card-body">
+          <h6 class="card-title"><strong>131 likes</strong></h6>
+          <p class="card-text">En el jardín donde el sol se posa,
+            nace una flor, radiante y hermosa.
+            Sus pétalos bailan en mil matices,
+            como sueños pintados en días felices.
+            No es solo flor, es canto y pintura,
+            un poema vivo, pura ternura.
+            Y al verla brillar bajo el sol que la adora,
+            la vida parece más bella ahora.
+          </p>
+        </div>
+      </div>
+
+      <div class="card m-2 p-0 col-lg-3 col-md-4 col-sm-12">
+        <div class="d-flex justify-content-between mx-1">
+          <p><strong>Hombre apoyado</strong></p>
+          <p>31/3</p>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1521112376370-0a3b01544ab1?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top" alt="Hombre Apoyado">
+        <div class="card-body">
+          <h6 class="card-title"><strong>487 likes</strong></h6>
+          <p class="card-text">Apoyado en ladrillos del tiempo, el hombre contempla sin prisa el viento. Gorra de tela,
+            mirada gastada, la vida escrita en su piel arrugada. La pared, testigo de historias pasadas, susurra
+            memorias ya olvidadas. Él no habla, pero todo lo dice: anhela una vida llena de finales felices.
+          </p>
+        </div>
+      </div>
+
+      <div class="card m-2 p-0 col-lg-3 col-md-4 col-sm-12">
+        <div class="d-flex justify-content-between mx-1">
+          <p><strong>Viaje en tren</strong></p>
+          <p>14/2</p>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1696994719492-dc6ba2c3c46d?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top border border-dark-subtle" alt="foto Trenes">
+        <div class="card-body">
+          <h6 class="card-title"><strong>346 likes</strong></h6>
+          <p class="card-text">El tren avanza, pero mi ser se queda,
+            mirada perdida, alma que espera.
+            Sombras de hierro cruzan su piel,
+            y el tiempo se esconde tras el andén.
+            Un instante quieto, sin despedida,
+            como si el viaje fuera para toda la vida.
+          </p>
+        </div>
+      </div>
+
+      <div class="card m-2 p-0 col-lg-3 col-md-4 col-sm-12">
+        <div class="d-flex justify-content-between mx-1">
+          <p><strong>Hoguera</strong></p>
+          <p>25/1</p>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1684403964197-999fc639247f?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top border border-dark-subtle" alt="Biblioteca">
+        <div class="card-body">
+          <h6 class="card-title"><strong>176 likes</strong></h6>
+          <p class="card-text">Crujen los troncos, canta el calor,
+            la noche se enciende con su fulgor.
+            Llama que baila, chispa que vuela,
+            el alma se abriga bajo su estela.
+            Silencio ardiente, tiempo sin prisa,
+            la hoguera susurra con suave brisa.
+          </p>
+        </div>
+      </div>
+
+      <div class="card m-2 p-0 col-lg-3 col-md-4 col-sm-12">
+        <div class="d-flex justify-content-between mx-1">
+          <p><strong>4Geeks</strong></p>
+          <p>7/12</p>
+        </div>
+        <img
+          src="https://images.unsplash.com/photo-1593640475673-e2454e28d27c?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="card-img-top border border-dark-subtle" alt="Persona Programando">
+        <div class="card-body">
+          <h6 class="card-title"><strong>131 likes</strong></h6>
+          <p class="card-text">En 4Geeks se enciende el saber,
+            con cada línea, aprendes a crecer.
+            No es solo código, es transformación,
+            de sueños dispersos a una profesión.
+            Aquí se forjan mentes brillantes,
+            con lógica, esfuerzo y pasos constantes.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+
+  <!-- Bootstrap JS + Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
